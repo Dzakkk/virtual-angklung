@@ -1,31 +1,17 @@
-import Tone1 from "./tone/Tone1";
-import Tone10 from "./tone/Tone10";
-import Tone2 from "./tone/Tone2";
-import Tone3 from "./tone/Tone3";
-import Tone4 from "./tone/Tone4";
-import Tone5 from "./tone/Tone5";
-import Tone6 from "./tone/Tone6";
-import Tone7 from "./tone/Tone7";
-import Tone8 from "./tone/Tone8";
-import Tone9 from "./tone/Tone9";
-import angklung from "./../assets/images/angklung.png"
-
+import Tone from "./tone/Tone";
 
 const Angklung = () => {
-    return (
-        <section className="flex bg-slate-500">
-            <Tone1 />
-            <Tone2 />
-            <Tone3 />
-            <Tone4 />
-            <Tone5 />
-            <Tone6 />
-            <Tone7 />
-            <Tone8 />
-            <Tone9 />
-            <Tone10 />
-        </section>
-    )
-}
+  return (
+    <section>
+      <div className="flex justify-around gap-3 p-4">
+        <Tone keySound="1" soundSrc={require("./../assets/sounds/1.mp3")} size="h-72" />
+        <Tone keySound="2" soundSrc={require("./../assets/sounds/2.mp3")} size="h-64" />
+        <Tone keySound="3" soundSrc={require("./../assets/sounds/3.mp3")} size="h-52" />
+        <Tone keySound="4" soundSrc={require("./../assets/sounds/4.mp3")} size="h-48" />
+        <Tone keySound="5" soundSrc={require("./../assets/sounds/5.mp3")} size="h-40" />
+      </div>
+    </section>
+  );
+};
 
 export default Angklung;
