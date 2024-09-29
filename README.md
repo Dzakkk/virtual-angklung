@@ -5,5 +5,6 @@ its works before i use reusable compoennt
 
 also if you have source of angklung sound please tell me, cuz now i have the sound is from cutting some youtube video..
 
+but if you wanna try, use the "pertama cuyy" commit. Its should be work
 
 adios~
