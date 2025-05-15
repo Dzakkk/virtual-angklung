@@ -58,7 +58,7 @@ const AngklungApp = () => {
   }, []);
 
   return (
-    <div className="grid grid-cols-5 gap-4 p-4">
+    <div className="flex flex-row gap-4 p-4 overflow-x-auto">
       {Object.entries(noteKeyMap).map(([key, note]) => (
         <button
           key={note}
@@ -67,13 +67,14 @@ const AngklungApp = () => {
           onMouseLeave={() => stopLoop(note)}
           onTouchStart={() => playLoop(note)}
           onTouchEnd={() => stopLoop(note)}
-          className="bg-green-300 hover:bg-green-500 text-white font-bold py-4 rounded-xl shadow-md"
+          className="bg-green-300 hover:bg-green-500 text-white font-bold py-4 px-6 rounded-xl shadow-md"
         >
           {key} - {note}
         </button>
       ))}
     </div>
+
   );
 }
- 
+
 export default AngklungApp;
